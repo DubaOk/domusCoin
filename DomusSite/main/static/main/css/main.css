@@ -1,7 +1,7 @@
 {% load static %}
 @font-face {
   font-family: "Furore";
-  src: url("{% static 'main/fonts/Furore.otf' %}");
+  src: url("../fonts/Furore.otf");
 }
 
 .header-items {
@@ -63,6 +63,8 @@
 }
 
 .main-image {
+  position: relative;
+  right: 100px;
   width: 400px;
 }
 
@@ -93,23 +95,23 @@
 }
 
 #img2 {
-  background-image: url("{% static 'main/images/house.png' %}");
+  background-image: url("../images/house2.png");
 }
 
 #img3 {
-  background-image: url("{% static 'main/images/house3.png' %}");
+  background-image: url("../images/house3.png");
 }
 
 #img4 {
-  background-image: url("{% static 'main/images/house4.png' %}");
+  background-image: url("../images/house4.png");
 }
 
 #img5 {
-  background-image: url("{% static 'main/images/house5.png' %}");
+  background-image: url("../images/house5.png");
 }
 
 #img6 {
-  background-image: url("{% static 'main/images/house6.png' %}");
+  background-image: url("../images/house6.png");
 }
 
 .nft {
@@ -135,7 +137,7 @@
 .nft-item {
   width: 360px;
   height: 360px;
-  background-image: url("{% static 'main/images/house.png' %}");
+  background-image: url("../images/house.png");
   border: solid 3px rgb(81, 53, 0);
   border-radius: 50px;
 }
@@ -232,42 +234,7 @@ input:focus {
 .accaunt-nft-item .accaunt-nft-image1 {
   width: 250px;
   height: 250px;
-  background-image: url("{% static 'main/images/house.png' %}");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.accaunt-nft-item .accaunt-nft-image2 {
-  width: 250px;
-  height: 250px;
-  background-image: url("{% static 'main/images/house2.png' %}");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.accaunt-nft-item .accaunt-nft-image3 {
-  width: 250px;
-  height: 250px;
-  background-image: url("{% static 'main/images/house3.png' %}");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.accaunt-nft-item .accaunt-nft-image4 {
-  width: 250px;
-  height: 250px;
-  background-image: url("{% static 'main/images/house4.png' %}");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.accaunt-nft-item .accaunt-nft-image5 {
-  width: 250px;
-  height: 250px;
-  background-image: url("{% static 'main/images/house5.png' %}");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.accaunt-nft-item .accaunt-nft-image6 {
-  width: 250px;
-  height: 250px;
-  background-image: url("{% static 'main/images/house6.png' %}");
+  background-image: url("../images/house.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -279,41 +246,6 @@ input:focus {
 }
 
 .countdown {
-  display: block;
-  font-weight: 100;
-  text-align: center;
-  font-size: 30px;
-}
-
-.countdown2 {
-  display: block;
-  font-weight: 100;
-  text-align: center;
-  font-size: 30px;
-}
-
-.countdown3 {
-  display: block;
-  font-weight: 100;
-  text-align: center;
-  font-size: 30px;
-}
-
-.countdown4 {
-  display: block;
-  font-weight: 100;
-  text-align: center;
-  font-size: 30px;
-}
-
-.countdown5 {
-  display: block;
-  font-weight: 100;
-  text-align: center;
-  font-size: 30px;
-}
-
-.countdown6 {
   display: block;
   font-weight: 100;
   text-align: center;
@@ -355,14 +287,10 @@ input:focus {
 .profile-image {
   width: 100px;
   height: 100px;
-  background-image: url("{% static 'main/images/logo.svg' %}");
+  background-image: url("../images/logo.svg");
   border-radius: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#item6, #item5, #item4 {
-  opacity: 30%;
 }
 
 .qr-image {
@@ -403,5 +331,6 @@ body {
 
 a {
   text-decoration: none;
+  text-underline: none;
   color: white;
 }
