@@ -78,13 +78,7 @@ WSGI_APPLICATION = 'DomusSite.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'PROJECT',
-        'USER': 'postgres',
-        'PASSWORD': 'kv6084242kv',
-        'HOST': 'localhost',
-    }
+
 }
 
 
