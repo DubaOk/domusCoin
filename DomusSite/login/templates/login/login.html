@@ -1,4 +1,4 @@
-{% load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,11 +12,19 @@
         <div class="container">
             <div class="form-content" id="form">
                 <h2>Вход</h2>
+                <div class="messages">
+                    {% for message in messages %}
+                        <div class="message {{ message.tags }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
                 <div class="form">
-                    <form>
-                        <input type="tel" name="" id="" placeholder="Логин">
-                        <input type="password" name="" id="" placeholder="Пароль">
-                        <input type="submit" placeholder="Отправить" class="submit">
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="text" name="username" placeholder="Логин">
+                        <input type="password" name="password" placeholder="Пароль">
+                        <input type="submit" value="Отправить" class="submit">
                     </form>
                 </div>
             </div>

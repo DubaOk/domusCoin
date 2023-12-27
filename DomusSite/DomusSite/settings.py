@@ -29,6 +29,10 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend'
+
+]
 
 INSTALLED_APPS = [
     'main',
@@ -58,7 +62,7 @@ ROOT_URLCONF = 'DomusSite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -83,7 +87,7 @@ DATABASES = {
         "NAME": "Django",
     }
 }
-
+LOGIN_REDIRECT_URL = '/account'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
