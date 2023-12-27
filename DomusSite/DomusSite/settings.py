@@ -119,8 +119,6 @@ USE_TZ = True
 STATIC_URL = 'main/static/'
 
 STATICFILES_DIRS = [
-    ("main", "/static/main/fonts"),
-    ("main", "/static/main/images"),
     BASE_DIR / "static",
 
 ]

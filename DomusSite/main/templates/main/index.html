@@ -24,7 +24,13 @@
                     <nav>
                         <a href="#about">О проекте</a>
                         <a href="#nft">NFT</a>
-                        <a href="#form">Аккаунт</a>
+                        <a id="login" style="cursor: pointer;">Аккаунт</a>
+                        <script>
+    document.getElementById('login').addEventListener('click', function() {
+        window.location.href = '/login';
+    });
+</script>
+
                     </nav>
                 </div>
             </div>
@@ -38,7 +44,7 @@
                         <h1>Domus – твой ключ к NFT бизнесу, обеспеченному реальной стоимостью</h1>
                     </div>
                     <div>
-                        <button class="main-button"><a href="#form">Купить NFT</a></button>
+                        <button class="main-button"><a href="#nft">Купить NFT</a></button>
                     </div>
                 </div>
                 <img src="{% static 'main/images/main-image.png' %}" alt="main-image" class="main-image">
@@ -154,7 +160,8 @@
                             <div class="nft-text">
                                 <div class="image-text">
                                     <img src="{% static 'main/images/logo.svg' %}" alt="logo-image" class="domus-image">
-                                    <div class="coin-text">
+
+                               <div class="coin-text">
                                         +300 каждый день
                                     </div>
                                 </div>
@@ -223,7 +230,9 @@
                                     </div>
                                 </div>
                                 <div class="image-text">
-                                    <img src="{% static 'main/images/lock.png' %}" alt="logo-image" class="domus-image">
+
+
+<img src="{% static 'main/images/lock.png' %}" alt="logo-image" class="domus-image">
                                     <div class="coin-text">
                                         +5% ежедневный разлок
                                     </div>
@@ -281,20 +290,7 @@
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="form-content" id="form">
-                <h2>Регистрация</h2>
-                <div class="form">
-                    <form>
-                        <input type="text" name="" id="" placeholder="Логин">
-                        <input type="email" name="" id="" placeholder="Email">
-                        <input type="password" name="" id="" placeholder="Пароль">
-                        <input type="submit" placeholder="Отправить" class="submit">
-                        <div><a href="../html/haveRegistration.html" class="alredyRegistrated">у меня есть аккаунт</a></div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <div class="container"></div>
     </section>
     <footer></footer>
     <script src="{% static 'main/script/script.js' %}"></script>
