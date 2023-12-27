@@ -24,7 +24,13 @@
                     <nav>
                         <a href="#about">О проекте</a>
                         <a href="#nft">NFT</a>
-                        <a href="../html/accaunt.html">Аккаунт</a>
+                        <a id="main1">Аккаунт</a>
+                        <script>
+    document.getElementById('main1').addEventListener('click', function() {
+        window.location.href = '/account';
+    });
+</script>
+
                     </nav>
                 </div>
             </div>
@@ -294,7 +300,12 @@
                     <div class="offer-hesh">
                         <form action="" class="offer">
                             <input type="text" placeholder="введите в поле хеш" class="hesh">
-                            <input type="submit" placeholder="Отправить" class="submit2">
+                            <script>
+    document.getElementById('main').addEventListener('click', function() {
+        window.location.href = '/account';
+    });
+</script>
+                            <input type="submit" placeholder="Отправить" id="main">
                         </form>
                     </div>
                 </div>
